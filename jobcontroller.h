@@ -1,0 +1,11 @@
+int add_to_background(pid_t process_id, char* command_argument);
+int add_to_foreground(pid_t process_id, char* command_argument);
+int print_jobs(char **arguments,int count);
+int kjob(char **arguments,int count);
+int fg(char **arguments,int count);
+int bg(char **arguments,int count);
+int mysetenv(char **arguments,int count);
+int myunsetenv(char **arguments,int count);
+int overkill(char **arguments,int count);
+int quit(char **arguments,int count);
+void init_job_controls();
